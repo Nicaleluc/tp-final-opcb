@@ -34,7 +34,7 @@ La consigna califica cuatro componentes. Esta carpeta los resuelve así:
 | Componente | Peso | Artefacto(s) | Estado |
 |---|---|---|---|
 | **A. Planificación del proyecto** | 25 % | `01-planificacion/proyecto.md` (problema, objetivos, alcance, stakeholders, riesgos, cronograma) · `01-planificacion/roles.md` · `01-planificacion/product-backlog.md` · `01-planificacion/sprint-planning.md` | implementado |
-| **B. Ejecución y herramientas** | 25 % | **Tablero Trello publicado** ([trello.com/b/8kXtbi62](https://trello.com/b/8kXtbi62/opcb-observatorio-de-precios-de-la-canasta-basica)) · **repositorio de la entrega** [github.com/Nicaleluc/tp-final-opcb](https://github.com/Nicaleluc/tp-final-opcb) · **repositorio de código** [github.com/Nicaleluc/tp2-precios-supermercados-etl](https://github.com/Nicaleluc/tp2-precios-supermercados-etl) · `03-trello/tablero-import.csv` + `tablero.md` (estructura y respaldo) · `02-documentacion/bitacora.md` | implementado (tablero público, repo de entrega y repo de código) |
+| **B. Ejecución y herramientas** | 25 % | **Tablero Trello publicado** ([trello.com/b/8kXtbi62](https://trello.com/b/8kXtbi62/opcb-observatorio-de-precios-de-la-canasta-basica)) · **repositorio de la entrega** [github.com/Nicaleluc/tp-final-opcb](https://github.com/Nicaleluc/tp-final-opcb) · **repositorio de código** [github.com/Nicaleluc/tp2-precios-supermercados-etl](https://github.com/Nicaleluc/tp2-precios-supermercados-etl) · **dashboard** `04-presentacion/dashboard-opcb.html` · **informe automático** `02-documentacion/informe-opcb.md` · `03-trello/tablero-import.csv` + `tablero.md` (estructura y respaldo) · `02-documentacion/bitacora.md` | implementado (tablero público, repos, dashboard e informe) |
 | **C. Documentación profesional** | 20 % | `README.md` del repositorio (publicado; borrador en `02-documentacion/README-repositorio.md`) · `02-documentacion/informe-etica.md` · este índice | implementado |
 | **D. Presentación final** | 30 % | `04-presentacion/guion.md` (estructura, tiempos y preguntas anticipadas) · `04-presentacion/presentacion-opcb-completa.pptx` (8 diapositivas, con logo del INA) · `04-presentacion/diapositiva-opcb-sintesis.pptx` (síntesis del marco de trabajo) · `04-presentacion/TP_Final_OPCB_Resumen_Lucero.docx` (resumen de 2 páginas) | implementado (falta ensayo cronometrado) |
 
@@ -49,11 +49,13 @@ La consigna califica cuatro componentes. Esta carpeta los resuelve así:
 | Product backlog priorizado y estimado | implementado | — |
 | Sprint planning (Sprint 0, 1 y 2) | implementado | — |
 | Tablero Trello (7 listas, 21 tarjetas) | implementado | tablero **público**: link en `03-trello/README.md` 7.0; etiquetas, fechas y descripciones se cargan desde `tablero-import.csv` |
-| Repositorio GitHub con código y commits | implementado | entrega publicada en `tp-final-opcb`; código en `tp2-precios-supermercados-etl` (9 commits) |
+| Repositorio GitHub con código y commits | implementado | entrega publicada en `tp-final-opcb`; código en `tp2-precios-supermercados-etl` (commits significativos) |
 | README del repositorio | implementado | publicado en el repo; borrador en `02-documentacion/README-repositorio.md` |
 | Informe de ética | implementado | revisión final de citas |
 | Bitácora de trabajo | implementado | registro de Sprint 0, 1 y 2 en `02-documentacion/bitacora.md` |
 | Presentación oral | implementado (deck) · parcial (ensayo) | 8 diapositivas listas; falta ensayo cronometrado |
+| Dashboard (vista estática) | implementado | `04-presentacion/dashboard-opcb.html`; el pipeline completo se ejecuta sobre la base |
+| Informe automático | implementado | `02-documentacion/informe-opcb.md`; se regenera con `py -u -m cli.generar_informe` |
 
 ---
 
@@ -77,7 +79,7 @@ La consigna califica cuatro componentes. Esta carpeta los resuelve así:
 |---|---|---|
 | 14–16 nov | Sprint 0 — planificación | definición, roles, backlog, tablero, repo creado |
 | 17–20 nov | Sprint 1 — ingesta y canasta | dataset normalizado + costo de canasta + tests |
-| 21–23 nov | Sprint 2 — producto y cierre | dashboard, informe, README, ética, presentación |
+| 21–24 nov | Sprint 2 — producto y cierre | dashboard, informe, README, ética, presentación |
 | 24 nov | Entrega y ensayo | PDF/links en el aula virtual |
 | Semana 16 | Defensa oral | presentación y respuestas al comité |
 
@@ -92,5 +94,6 @@ La consigna califica cuatro componentes. Esta carpeta los resuelve así:
 - [x] Tablero Trello publicado y con actividad real (7 listas, 21 tarjetas; [trello.com/b/8kXtbi62](https://trello.com/b/8kXtbi62/opcb-observatorio-de-precios-de-la-canasta-basica)).
 - [x] Repositorio GitHub público con documentación y commits significativos (entrega en `tp-final-opcb`; código en `tp2-precios-supermercados-etl`).
 - [x] Informe breve de ética.
+- [x] Dashboard e informe automático generados.
 - [x] Lenguaje técnico y profesional.
 - [ ] Presentación final ensayada (deck de 8 diapositivas armado; falta ensayo cronometrado).

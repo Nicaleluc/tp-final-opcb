@@ -132,6 +132,7 @@ py -u -m cli.cargar_sepa                      # cadena SEPA
 py -u -m cli.comparar leche yerba aceite      # comparación sobre la base (o comparar.bat)
 py -u -m cli.comparar --ean 7790742358608     # un producto en todas las cadenas
 py -u -m cli.chequear_precio <termino>        # control puntual de precio
+py -u -m cli.generar_informe                  # informe automático en Markdown
 ```
 
 ### 5. Tests
@@ -156,7 +157,7 @@ Las pruebas unitarias corren sin base de datos. Las de integración se saltean s
 
 ---
 
-## Resultados (operativo cargado, 13–20/10/2026)
+## Resultados (dataset operativo del TP II, 13–20/10/2026)
 
 | Métrica | Valor | Cómo se obtiene |
 |---|---|---|
@@ -169,6 +170,10 @@ Las pruebas unitarias corren sin base de datos. Las de integración se saltean s
 
 Las cifras se recalculan con los comandos de la sección 4: no hay valores escritos a mano en el
 código.
+
+El dataset operativo proviene del relevamiento del TP II; el MVP del OPCB se apoya en esa base y
+restringe la canasta a tres cadenas (SEPA, La Banderita y Coope) para que la comparación sea
+verificable. Las doce cadenas cargadas quedan disponibles para consultas puntuales.
 
 <p align="center">
   <em>Capturas del tablero y de la comparación: carpeta <code>capturas/</code>.</em>
@@ -190,6 +195,7 @@ tp2-precios-supermercados-etl/
 ├── sql/                 # esquema y migraciones (D_Precio*, compras, vistas)
 ├── tests/               # pruebas
 ├── capturas/            # evidencias (comparaciones, tablero)
+├── dashboard/           # vista estática del caso de prueba
 ├── docs/proyecto/       # planificación, documentación, trello y presentación
 ├── *.bat                # atajos de ejecución
 ├── .env.template
@@ -217,7 +223,8 @@ Informe completo:
 
 ## Gestión del proyecto
 
-- Repositorio: <https://github.com/Nicaleluc/tp2-precios-supermercados-etl>
+- Repositorio de la entrega: <https://github.com/Nicaleluc/tp-final-opcb>
+- Repositorio de código: <https://github.com/Nicaleluc/tp2-precios-supermercados-etl>
 - Tablero Trello: <https://trello.com/b/8kXtbi62/opcb-observatorio-de-precios-de-la-canasta-basica>
 - Bitácora y decisiones:
   [`docs/proyecto/02-documentacion/bitacora.md`](docs/proyecto/02-documentacion/bitacora.md)
